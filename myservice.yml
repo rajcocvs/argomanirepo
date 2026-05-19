@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ncpl-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: ncpl
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

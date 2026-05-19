@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ncpl-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ncpl
+  template:
+    metadata:
+      labels:
+        app: ncpl
+    spec:
+      containers:
+      - name: ncpl
+        image: rajcosivadevops/ncpltrail:latest
+        ports:
+        - containerPort: 80
