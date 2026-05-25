@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ncpl
-        image: rajcosivadevops/ncpltrail:latest
+        image: rajcosivadevops/indianncpldemo:latest
         ports:
         - containerPort: 80
